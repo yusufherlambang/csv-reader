@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "d356e788-27ae-42c5-a477-13651c8a16c1",
+		"name": "csv-reader",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20233492"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/csv-reader/readCsv/getFile?filePath=D:\\TMS_DMIG\\out_mxml_statics\\murex_hol_cleanup_selected_yes_asli.csv",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"csv-reader",
+						"readCsv",
+						"getFile"
+					],
+					"query": [
+						{
+							"key": "filePath",
+							"value": "D:\\TMS_DMIG\\out_mxml_statics\\murex_hol_cleanup_selected_yes_asli.csv"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "testing",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/csv-reader/readCsv/process-csv?inputFilePath=D:/TMS_DMIG/csvCreator/yesInput.csv&outputFilePath=D:/TMS_DMIG/csvCreator/yesOutput.csv",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"csv-reader",
+						"readCsv",
+						"process-csv"
+					],
+					"query": [
+						{
+							"key": "inputFilePath",
+							"value": "D:/TMS_DMIG/csvCreator/yesInput.csv"
+						},
+						{
+							"key": "outputFilePath",
+							"value": "D:/TMS_DMIG/csvCreator/yesOutput.csv"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "murex_hol_cleanup_selected_yes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/csv-reader/readCsv/process-csv?inputFilePath=D:/TMS_DMIG/SIT/murex_hol_cleanup.csv&outputFilePath=D:/TMS_DMIG/SIT/selectedYes/murex_hol_cleanup_selected_yes.csv",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"csv-reader",
+						"readCsv",
+						"process-csv"
+					],
+					"query": [
+						{
+							"key": "inputFilePath",
+							"value": "D:/TMS_DMIG/SIT/murex_hol_cleanup.csv"
+						},
+						{
+							"key": "outputFilePath",
+							"value": "D:/TMS_DMIG/SIT/selectedYes/murex_hol_cleanup_selected_yes.csv"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
